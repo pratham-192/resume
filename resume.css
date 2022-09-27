@@ -1,0 +1,462 @@
+body{
+	margin: 0px;
+}
+/*BODY HEADER*/
+#body-header{
+	height: 65vh;
+	opacity: 0.8;
+	background-image: url(macbook_mouse.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+}
+/*HORIZONTAL LIST*/
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 8px 8px 0px;
+	font-weight: 100;
+	font-size: 0.9rem;
+}
+/*CHANGING COLOR OF ANCHOR TAG OF HORIZONTAL LIST*/
+.horizontal-list li a{
+	color: white;
+	text-decoration: none;
+}
+/*GENERAL CLASS FOR ALGINING TEXT CENTER*/
+.text-center{
+	text-align: center;
+}
+.nav-menu li{
+	margin-top: 20px;
+}
+.nav-menu li a:hover{
+	color: lightgrey;
+	border-bottom: 2px solid white;
+}
+.nav-menu li a {
+    transition: color 0.4s, border-bottom 2s;
+}
+#name{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	margin-top: 170px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+.social-icons li a i{
+	padding: 10px;
+	font-size: 1 rem;
+	border-radius: 50%;
+}
+.social-icons li a i:hover{
+	box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.5);
+
+}
+#about{
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+#profile_pic{
+	height: 12rem;
+	width: 12rem;
+	margin: auto;
+	margin-top:-14vh;
+}
+#profile_pic img{
+	height: 100%;
+	width: 100%;
+	border: 1px solid black;
+  border-radius: 50%;
+  box-shadow:0px 0px 6px 4px lightgrey ;
+}
+#about-para{
+	width: auto;
+	font-size: 25px;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+								/*designing the vertical list on shrinking of page(responsiveness)*/
+.no-list-style{
+	list-style: none;
+}
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 3%;
+    display: none;
+    text-align: right;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+  
+ .dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}                                    /*designing the skills seciton*/
+section:nth-child(2n)
+{
+	background-color: white;
+}
+section:nth-child(2n+1){
+	background-color: #9e9b9b29;
+}
+section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#skills-heading span{
+	color: #2857a4;
+	font-size: 40px;
+	display: inline-block;
+	padding: 40px 10px 10px;
+	font-weight: 400;
+	width: auto;
+	padding-bottom: 50%;
+}
+.mb75px{
+	margin-bottom:75px ;
+}
+.skills-display{
+	width: 65%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+.skill-progress{
+	width: 11rem;
+	height: 2rem;
+	border-radius: 0.8rem;
+	background-color: lightgrey;
+}
+.skill span{
+	color: white;
+	font-size: 1rem;
+	padding-left: 10px;
+}
+.skill-progress>div{/*applied to direct child(divs') of skill progress*/
+	border-radius: 20px 0px 0px 20px;
+}
+.skill-name{
+	padding-top: 7px;
+}
+.mb-blue{
+	background-color: blue;
+}
+.mb-red{
+	background-color: red;
+}
+.mb-green{
+	background-color: green;
+}
+.skill1{
+	width: 50%;
+	height: inherit;
+}
+.skill2{
+	width: 90%;
+	height: inherit;
+}
+.skill3{
+	width: 70%;
+	height: inherit;
+}
+.skill4{
+	width: 20%;
+	height: inherit;
+}
+.skill5{
+	width: 40%;
+	height: inherit;
+}
+.skill6{
+	width: 10%;
+	height: inherit;
+}
+                               /*contact portion*/
+#contact{
+	background-color: #0abcf9;
+	height: auto;
+	background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+	color: white;
+}
+#contact-heading{
+	text-align: center;
+	width: auto;
+	color: white;
+	font-size: 40px;
+	padding: 60px 10px 10px;
+	margin-bottom: 7%;
+}
+.details{
+	width: 100%;
+	display: flex;
+}
+.details div{
+	display: inline-block;
+}
+#detail1{
+	width: 50%;
+}
+#form{
+	border: none;
+	background: none;
+	text-align: center;
+	margin-left: 20%;
+}
+#form input,textarea{
+	background-color: initial;
+	margin: 10px;
+	padding: 4px 10px;
+	border: 0px solid transparent;
+	border-bottom: 3px solid white;
+    color: #d9dcdd;
+	width: 90%;
+	line-height: 1.6;
+    font-size: 1.05rem;
+}
+#send-message{
+	padding: 10px;
+	background-color: initial;
+	border: 2px solid white;
+	margin-top: 5%;
+	border-radius: 5px;
+	font-weight: 500;
+	color: white;
+	width: auto;
+	align-items: center;
+	padding: 15px 10px 15px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+#send-message:hover{
+	background: white;
+    color: #13386fe0;
+}
+#detail2{
+	width: 35%;
+	margin-left: 7%;
+	font-family: sans-serif;
+	font-size: 0.9rem;
+}
+#detail2 p{
+	color: #d9dcdd;
+    font-size: 0.9rem;
+}
+.my-details-info{
+	margin-bottom: 20px;
+    color: #d9dcdd;
+}
+.my-details-info span{
+	margin-right: 15px;
+}
+.page-bottom{
+	padding-bottom: 70px;
+	padding-top: 20px;
+	word-spacing: 20px;
+}
+.page-bottom li a i{
+	font-size: 22px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+                  /*creating the experience section(timeline)*/
+.timeline{
+	position: relative;
+	width: 75%;
+}
+.timeline-boxes{
+	position: relative;
+	min-height: 200px;
+	width: 40%;
+	margin: 10px;
+
+
+}
+.timeline-boxes:nth-child(2n){
+	left: 55%;
+}
+.timeline-divider{
+	position: absolute;
+	height: 75%;
+	width: 0;
+	top: 10%;
+	left: 48%;
+	border: 1px dashed #0096fa6b;
+}
+
+.timeline-traveller{
+	top: 25%;
+	position: sticky;
+	transform: rotate(90deg);
+	margin-bottom: 20px;
+	/*display: block;*/
+}
+.timeline-boxes:nth-child(2n+1)::after{
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	width: 1rem;
+	height: 1rem;
+	background-color: grey;
+	top: 30%;
+	right: -19.75%;
+	z-index: 1;/*when 2 or more div's are placed on each other then which div will be visible at the time of overlapping
+	so the div with high z-index will be visible and the rest are overlapped.
+*/}
+.timeline-boxes:nth-child(2n)::after{
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	width: 1rem;
+	height: 1rem;
+	background-color: grey;
+	top: 30%;
+	left: -21.75%;
+	z-index: 1;
+}
+											/*experience section*/
+#experience-car i{
+	font-size: 25px;
+    color: #2857a4;
+}
+.education-details{
+	padding: 10px;
+}
+.education-details h3,h4,h5{
+	position: relative;
+	left: 23vw; 
+}
+.timeline-logo{
+	width: 50px;
+	overflow: hidden;
+	position: relative !important;
+	left: -1px !important;
+	top: 10vh;
+}
+.timeline-logo img{
+	width: 100%;
+}
+.education-details div{
+	position: relative;
+	color: #2857a4;
+	padding: 5px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	left: 80%;
+}
+.education-designation{
+    font-size: 1.4rem;
+}
+#education-designation-margin{
+	left: 12.5vw;
+}
+.education-company{
+	margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-left: 5%;
+}
+.education-duration{
+	color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+.education-details p{
+	font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+.education-details{
+	text-align: justify;
+}
+.m0{
+	margin: 0;
+}
+@media screen and (max-width: 900px)
+{
+	.timeline-divider{
+		left: 5%;
+
+	}
+	.timeline-boxes{
+		left: 12% !important;
+		width: 85%;
+	}
+	.timeline-boxes::after
+	{
+		left: -11.5% !important;
+	}
+	#skills-heading span{
+		padding-bottom: 20px;
+	}
+}
+@media screen and (max-width: 700px)
+{
+	.details{
+		flex-wrap: wrap;
+	}
+	#detail1{
+		width: 80%;
+		margin: 10%;
+	}
+	#detail2{
+		width: 80%;
+		margin: 10%;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	#form{
+		margin-left: 0;
+	}
+	.bars {
+        display: block;
+    }  
+    .nav-menu {
+        display: none;
+    } 
+
+}
